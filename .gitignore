@@ -11,4 +11,4 @@ git-cheatsheet/main.js.LICENSE.txt
 !.yarn/sdks
 !.yarn/versions
 .idea/*
-APP-darwin-x64
+APP-darwin-x64/*
