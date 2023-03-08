@@ -89,11 +89,10 @@
              rel="noopener"
              onclick="ga('send', { hitType: 'event', eventCategory: 'git-cheatsheet', eventAction: 'refer', eventLabel: 'git-pretty'})">escape a git mess,
         step-by-step&raquo;</a></li>
-      <li><a href="https://www.amp-what.com?utm_source=Git+Cheatsheet&amp;utm_campaign=Text+Link&amp;utm_medium=web"
+      <li><a href="https://doabledanny.gumroad.com/l/git-commands-cheat-sheet-pdf"
              target="_blank"
              rel="noopener"
-             onclick="ga('send', { hitType: 'event', eventCategory: 'git-cheatsheet', eventAction: 'refer', eventLabel: 'amp-what'})">discover character
-        entities at &amp;what&raquo;</a></li>
+             onclick="ga('send', { hitType: 'event', eventCategory: 'git-cheatsheet', eventAction: 'refer', eventLabel: 'amp-what'})">Git Cheats</a></li>
     </ul>
   </div>
 </div>
@@ -103,16 +102,20 @@
   <section id="index" class="loc grid_3"><h5>index</h5></section>
   <section id="local_repo" class="loc grid_3"><h5>local repository</h5></section>
   <section id="remote_repo" class="loc grid_3"><h5>upstream repository</h5></section>
-  <section class="grid_2 omega" style='overflow: hidden'>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- Git Cheatsheet – Wide Skyscraper -->
-    <ins class="adsbygoogle"
-         style="display:inline-block;width:160px;height:600px"
-         data-ad-client="ca-pub-6893651588300115"
-         data-ad-slot="6274733676"></ins>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+
+  <section class="loc grid_3" style="font-family: 'Source Code Pro'">
+      Distributed Revision Control System > Stupid Content Tracker > Persistent Hash Map(Hash-Sha1, Bytes Sequence) <br><br>
+      .git/objects : contains changes tree (tree:directory, blob:files)<br>
+      .git/HEAD : to keep track of current branch, a reference to a branch<br>
+      .git/index : the staging/index area <br>
+      .git/config : global git config<br>
+      .git/refs/heads : branches<br>
+      .git/refs/heads/main : the main branch, contains hash that points/reference to the current commit<br>
+    <hr>
+    $ echo "Hello World" | git hash-object --stdin<br>
+    $ git cat-file 5d7fb1f018705e570031b14bcb9d768fb9cd98d2 (-t : type | -p : pretty)<br>
+    $ git count-objects<br>
+
   </section>
   <dl id="commands">
     <dt>status</dt>

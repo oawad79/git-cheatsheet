@@ -106,6 +106,10 @@
             "cmd": "branch --track <new branch name> <remote>/<branch>",
             "docs": "Create a new local branch from a remote-tracking branch."
         },
+        "branch --all": {
+            "cmd": "branch --all",
+            "docs": "Lists all the branches/references including the remote ones. example output: \r* master\r  remotes/origin/HEAD &rarr; origin/master\r  remotes/origin/master"
+        },
         "clone x": {
             "cmd": "clone <repo>",
             "docs": "Download the repository specified by <repo> and checkout `HEAD` of the main branch."
