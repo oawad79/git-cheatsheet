@@ -10,3 +10,5 @@ git-cheatsheet/main.js.LICENSE.txt
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+.idea/*
+
