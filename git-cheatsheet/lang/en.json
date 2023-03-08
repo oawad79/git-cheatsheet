@@ -24,7 +24,7 @@
         },
         "rm x": {
             "cmd": "rm <file(s)...>",
-            "docs": "Remove a file from the workspace and the index."
+            "docs": "Remove a file from the workspace and the index.\r to remove only from index use \rgit rm --cached"
         },
         "mv x": {
             "cmd": "mv <file(s)...>",
@@ -149,6 +149,10 @@
         "clean": {
             "cmd": "clean",
             "docs": "Cleans the working tree by recursively removing files that are not under version control, starting from the current directory. Use `-n` for a \"dry run\" to see what would be deleted. Use `-f` to delete the files."
+        },
+        "show-ref name": {
+            "cmd": "show-ref name",
+            "docs": "Show all the branches that has branch in their names. Example\r$ git show-ref master\rc87ecfde838055d71ce24986e8cdc26eec617c40 refs/heads/master\r42656dff3f1ab0f712d252bd439a30fd9445c53f refs/original/refs/heads/master\rc87ecfde838055d71ce24986e8cdc26eec617c40 refs/remotes/origin/master"
         },
         "stash push": {
             "cmd": "stash push [<msg>]",

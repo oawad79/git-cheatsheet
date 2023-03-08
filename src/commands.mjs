@@ -120,6 +120,13 @@ export const commands = [
   },
   {
     "left":      "workspace",
+    "right":     "remote_repo",
+    "direction": "up",
+    "key":       "show-ref name",
+    "tags":      "Branching and Merging",
+  },
+  {
+    "left":      "workspace",
     "right":     "local_repo",
     "direction": "dn",
     "key":       "merge x",
