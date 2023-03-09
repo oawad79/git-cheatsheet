@@ -117,12 +117,15 @@
       .git/HEAD : to keep track of current branch, a reference to a branch<br>
       .git/index : the staging/index area <br>
       .git/config : global git config<br>
+      .git/refs : All branches/tags are references to a commit...can be updated with update-ref<br>
       .git/refs/heads : branches<br>
       .git/refs/heads/main : the main branch, contains hash that points/reference to the current commit<br>
     <hr>
     $ echo "Hello World" | git hash-object --stdin<br>
     $ git cat-file 5d7fb1f018705e570031b14bcb9d768fb9cd98d2 (-t : type | -p : pretty)<br>
     $ git count-objects<br>
+    $ git update-ref .git/refs/heads/main 5d7fb1f018705e570031b14bcb9d768fb9cd98d2<br>
+    $ git show-ref<br>
 
   </section>
   <dl id="commands">
